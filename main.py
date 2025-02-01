@@ -36,3 +36,7 @@ model.fit(X_train, y_train)
 accuracy = model.score(X_test, y_test)
 print(f'Accuracy: {accuracy * 100:.2f}%') # Accuracy: 66.67%
 
+def predict_sentiment(text):
+  return model.predict([text])[0]
+
+print(predict_sentiment('I absolutely hate this!'))
