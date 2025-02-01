@@ -32,3 +32,7 @@ X_train, X_test, y_train, y_test = train_test_split(df['text'], df['sentiment'],
 model = make_pipeline(CountVectorizer(), MultinomialNB())
 
 model.fit(X_train, y_train)
+
+accuracy = model.score(X_test, y_test)
+print(f'Accuracy: {accuracy * 100:.2f}%') # Accuracy: 66.67%
+
