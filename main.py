@@ -22,7 +22,7 @@ data = {
     'I hate it, very disappointing.',
     'Not bad, could be better.'
   ],
-  'sentiment': ['positive', 'negative', 'positive', 'negative', 'neutral']
+  'sentiment': ['positive', 'negative', 'positive', 'neutral', 'positive', 'negative', 'positive', 'negative', 'neutral', 'negative', 'positive', 'negative', 'neutral']
 }
 
 df = pd.DataFrame(data)
