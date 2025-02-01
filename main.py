@@ -27,12 +27,8 @@ data = {
 
 df = pd.DataFrame(data)
 
-# print(df)
-
 X_train, X_test, y_train, y_test = train_test_split(df['text'], df['sentiment'], test_size=0.2, random_state=42)
-
-# print(y_test)
 
 model = make_pipeline(CountVectorizer(), MultinomialNB())
 
-print(model)
+model.fit(X_train, y_train)
