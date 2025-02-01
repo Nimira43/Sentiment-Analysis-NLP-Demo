@@ -33,3 +33,6 @@ X_train, X_test, y_train, y_test = train_test_split(df['text'], df['sentiment'],
 
 # print(y_test)
 
+model = make_pipeline(CountVectorizer(), MultinomialNB())
+
+print(model)
