@@ -39,4 +39,4 @@ print(f'Accuracy: {accuracy * 100:.2f}%') # Accuracy: 66.67%
 def predict_sentiment(text):
   return model.predict([text])[0]
 
-print(predict_sentiment('I absolutely hate this!'))
+print(predict_sentiment('It was very average.'))
