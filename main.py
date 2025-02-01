@@ -19,10 +19,10 @@ data = {
     'Rude staff but the food was quite nice to be fair.',
     'This is the worst experience ever.',
     'Absolutely fantastic, highly recommend it.',
-    'I hate it, very disappointing.',
-    'Not bad, could be better.'
+    'Not bad, could be better.',
+    'I hate it, very disappointing.'
   ],
-  'sentiment': ['positive', 'negative', 'positive', 'neutral', 'positive', 'negative', 'positive', 'negative', 'neutral', 'negative', 'positive', 'negative', 'neutral']
+  'sentiment': ['positive', 'negative', 'positive', 'neutral', 'positive', 'negative', 'positive', 'negative', 'neutral', 'negative', 'positive', 'neutral', 'negative']
 }
 
 df = pd.DataFrame(data)
@@ -31,4 +31,5 @@ df = pd.DataFrame(data)
 
 X_train, X_test, y_train, y_test = train_test_split(df['text'], df['sentiment'], test_size=0.2, random_state=42)
 
-# print(X_train)
+# print(y_test)
+
